@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link href="/wwwroot/css/bootstrap.css" rel="stylesheet">
+</head>
+<style>
+    .container{
+        background-color: darkgreen;
+    }
+     .dropbtn{
+        background-color: darkgreen;
+        color: white;
+        padding: 16px;
+        width: 3000px;
+        border: none;
+        cursor: pointer;
+    }
+   .dropdown:hover{
+       position: relative;
+       display: inline-block;
+   }
+   .dropdown-content{
+       display: none;
+       position: absolute;
+       background-color: #f1f1f1;
+       min-width: 160px;
+       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0, 2),
+   }
+   .dropdown-content a:hover{
+       background-color: #ddd;
+   }
+   .dropdown-content a{
+       color: black;
+       padding: 12px 16px;
+       text-decoration: none;
+       display: block;
+   }
+   .show{
+       display: block;
+   }
+   .row{
+       background-color: skyblue;
+   }
+  
+</style>
+<body>
+    <div class="dropdown">
+        <button onclick="myfunction()" class="dropbtn d-flex">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="/index.html">Home</a>
+            <a href="/creat.html">Creat an account</a>
+            <a href="/babies.html">Sign In</a>
+    
+        </div>
+    
+    </div>
+    <div class="row my-2 py-2 d-flex justify-content-center text-center">
+        <h1 class="text-success">HOUSEHOLD & TOILETRIES</h1>
+            <div class="col-3">
+            <a href="#" class="nav-link"></a>
+            <img src="/wwwroot/images/oral_b_pro-health_tooth_paste.jpg" width="px" height="200px">
+            <h6>Oral B</h6>
+            <h7>&#8358;350</h7>
+        </div> 
+        <div class="col-3">
+            <img src="/wwwroot/images/safeguard_lemon_fresh_antibacterial_soap_-_175g.jpg" width="px" height="200px">
+            <h6>safeguard</h6>
+            <h7>&#8358;500</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/tetmosol-medicated-soap.jpg" width="px" height="200px">
+            <h6>Tetmosol</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/sunlight_2in1_detergent.jpg" width="px" height="200px">
+            <h6>Sunlight</h6>
+            <h7>&#8358;700</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/house.jfif" width="px" height="200px">
+            <h6>household & Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/housee.jfif" width="px" height="200px">
+            <h6>ARf</h6>
+            <h7>abdul4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/huouous.jfif" width="px" height="200px">
+            <h6>Sanitizer</h6>
+            <h7>abdul4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/huuuse.jfif" width="430px" height="200px">
+            <h6>Sniper</h6>
+            <h7>abdu4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/hhhhhh.jfif" width="px" height="200px">
+            <h6>ARIEL</h6>
+            <h7>abdul4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/hhhuuuu.jfif" width="px" height="200px">
+            <h6>Apta</h6>
+            <h7>abdul4all.com</h7>
+           
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/detol.jfif" width="px" height="200px">
+            <h6>Detol</h6>
+            <h7>abdul4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/images (23).jfif" width="px" height="200px">
+            <h6>D-Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/premier_cool_deo_antiseptic_soap.jpg" width="px" height="300px">
+            <h6>D-Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/safeguard-pure-white-antibacterial-soap-pack_-_175g.jpg" width="px" height="200px">
+            <h6>D-Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/morning_fresh_dishwashing_liquid_-_900ml.jpg" width="px" height="200px">
+            <h6>D-Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+        <div class="col-3">
+            <img src="/wwwroot/images/macleans_active_flouride_herbal_toothpaste.jpg" width="px" height="200px">
+            <h6>D-Toiletries</h6>
+            <h7>abdull4all.com</h7>
+        </div>
+
+    </div>
+    <script>
+        function myfunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick= function(event){
+            if
+            (!event.teget.matches(`.dropbtn`)){
+                var dropdowns= document.getElementsByClassName("dropdown-content");
+                var i;
+                for(i=0; i++<
+                dropdowns.lenght; i++) {
+                    var openDropdown=dropdowns[i];
+                    if
+                    (opendropdown.classList.contains(`show`)){
+                        openDropdown.classList.remove(`show`)
+                    }
+                }
+            }
+        }
+    </script>
+                       <!--footer section begins-->
+ <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container text-white d-flex justify-content-center">
+ 
+        &copy; 2021 Abdul4all Technologies Limited. All Rights Reserved.
+
+    </div>
+
+ </footer>   
+    
+
+    
+</body>
+</html>
